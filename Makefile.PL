@@ -20,7 +20,6 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "WebService::HackerNews",
   "PREREQ_PM" => {
-    "Data::Dumper" => 0,
     "HTTP::Tiny" => 0,
     "JSON" => 0,
     "Moo" => 0
@@ -30,7 +29,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -38,7 +37,6 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Data::Dumper" => 0,
   "HTTP::Tiny" => 0,
   "JSON" => 0,
   "Moo" => 0,

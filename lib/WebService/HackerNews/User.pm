@@ -1,5 +1,5 @@
 package WebService::HackerNews::User;
-$WebService::HackerNews::User::VERSION = '0.01';
+$WebService::HackerNews::User::VERSION = '0.02';
 use Moo;
 
 has id        => (is => 'ro');
