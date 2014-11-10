@@ -1,8 +1,7 @@
 package WebService::HackerNews;
-$WebService::HackerNews::VERSION = '0.03';
+$WebService::HackerNews::VERSION = '0.04';
 use 5.006;
 use Moo;
-use HTTP::Tiny;
 use JSON qw(decode_json);
 
 use WebService::HackerNews::Item;
@@ -12,6 +11,7 @@ has ua => (
     is => 'ro',
     default => sub {
         require HTTP::Tiny;
+        require IO::Socket::SSL;
         HTTP::Tiny->new;
     },
 );

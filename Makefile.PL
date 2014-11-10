@@ -21,6 +21,7 @@ my %WriteMakefileArgs = (
   "NAME" => "WebService::HackerNews",
   "PREREQ_PM" => {
     "HTTP::Tiny" => 0,
+    "IO::Socket::SSL" => 0,
     "JSON" => 0,
     "Moo" => 0
   },
@@ -29,7 +30,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.03",
+  "VERSION" => "0.04",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -38,6 +39,7 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "HTTP::Tiny" => 0,
+  "IO::Socket::SSL" => 0,
   "JSON" => 0,
   "Moo" => 0,
   "Test::More" => "0.88",
